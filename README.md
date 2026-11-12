@@ -20,5 +20,7 @@ cd frontend && npm install && npm run dev
 Open http://localhost:5173 (API docs: http://127.0.0.1:8000/docs).
 
 ## Demo
-`Demo_Output/recording/VisionShield_Demo_Narrated.mp4` – narrated walkthrough. Test report: `Demo_Output/reports/TEST_REPORT.md`.
+**[▶ Watch the narrated demo video (4:41)](https://github.com/bargirsufiya/VisionShield/blob/main/Demo_Output/recording/VisionShield_Demo_Narrated.mp4)**
+
+Test report: [`Demo_Output/reports/TEST_REPORT.md`](Demo_Output/reports/TEST_REPORT.md)
 Large test videos (`Test_Data/`) and secrets (`.env`) are intentionally not in the repo.
