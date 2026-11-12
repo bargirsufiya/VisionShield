@@ -39,3 +39,10 @@ Demo_Output/screenshots/final/
 Demo_Output/screenshots/_*.jpg
 Demo_Output/poster/_prev.*
 Demo_Output/poster/preview.png
+
+# Local-only working files (not part of the repository)
+Demo_Output/recording/
+Demo_Output/poster/
+Demo_Output/reports/
+Demo_Output/screenshots/
+Demo_Output/tools/
