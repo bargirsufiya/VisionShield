@@ -1,0 +1,34 @@
+# Secrets
+.env
+*.env
+!.env.example
+# Python envs / caches
+.venv/
+venv/
+venv313/
+venv313_backup/
+__pycache__/
+*.pyc
+# Node
+node_modules/
+frontend/dist/
+# Large data / archives / generated media
+Test_Data/
+*.zip
+backend/ai/uploads/
+backend/ai/results/
+backend/ai/video_uploads/
+backend/ai/video_results/
+backend/ai/process_uploads/
+frontend/public/videos/
+# Logs
+*.log
+# Scripts that contain default credentials
+backend/set_admin_password.py
+backend/reset_admin_password.py
+# Demo tooling environments / intermediates
+Demo_Output/tools/pwenv/
+Demo_Output/tools/voice/
+Demo_Output/tools/raw/
+Demo_Output/recording/VisionShield_Demo.mp4
+Startup

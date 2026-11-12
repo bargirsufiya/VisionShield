@@ -1,0 +1,57 @@
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f6f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --vs-navy: #101a2b;
+  --vs-navy-2: #16243a;
+  --vs-burgundy: #7a183d;
+  --vs-burgundy-dark: #5c1230;
+  --vs-bg: #f4f6f9;
+  --vs-card: #ffffff;
+  --vs-border: #e4e8ef;
+  --vs-muted: #64748b;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; width: 100%; }
+body { min-width: 320px; background: var(--vs-bg); }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --vs-bg: #0f172a;
+  --vs-card: #1e293b;
+  --vs-border: #334155;
+  --vs-muted: #94a3b8;
+
+  color: #e2e8f0;
+  background: var(--vs-bg);
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --vs-bg: #f4f6f9;
+  --vs-card: #ffffff;
+  --vs-border: #e4e8ef;
+  --vs-muted: #64748b;
+
+  color: #172033;
+  background: var(--vs-bg);
+}
+
+/* Apply theme globally */
+body {
+  background: var(--vs-bg);
+  color: inherit;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
