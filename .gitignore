@@ -20,7 +20,8 @@ backend/ai/results/
 backend/ai/video_uploads/
 backend/ai/video_results/
 backend/ai/process_uploads/
-frontend/public/videos/
+frontend/public/videos/cam2_web.mp4
+frontend/public/videos/demo_foundry_pipeline.mp4
 # Logs
 *.log
 # Scripts that contain default credentials
@@ -32,3 +33,9 @@ Demo_Output/tools/voice/
 Demo_Output/tools/raw/
 Demo_Output/recording/VisionShield_Demo.mp4
 Startup
+
+# Large raw screenshots / previews (compressed copies live in docs/)
+Demo_Output/screenshots/final/
+Demo_Output/screenshots/_*.jpg
+Demo_Output/poster/_prev.*
+Demo_Output/poster/preview.png

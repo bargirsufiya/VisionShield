@@ -1,0 +1,18 @@
+# Versions below are the ones the project was developed and tested with (Python 3.13)
+fastapi==0.162.4
+uvicorn==0.54.0
+python-multipart==0.0.33
+pydantic==2.14.3
+pymongo==4.19.0
+dnspython==2.9.2
+python-dotenv==1.2.4
+pwdlib[argon2]==0.3.1
+argon2-cffi==25.1.0
+requests==2.34.2
+reportlab==5.1.0
+opencv-python==5.0.0.93
+imageio-ffmpeg==0.8.1
+ultralytics==8.4.210
+torch==2.15.0
+# Optional - only needed for SMS alerts via Twilio
+# twilio
