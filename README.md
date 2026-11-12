@@ -65,28 +65,6 @@
 
 The frontend and the backend communicate over a REST API (HTTP).
 
-## 📐 Design Diagrams
-
-**Modular structure**
-
-![Modular structure](docs/design/modular-structure.jpg)
-
-**Data flow diagram – Level 1**
-
-![DFD level 1](docs/design/dfd-level-1.jpg)
-
-**Database design (MongoDB collections)**
-
-![Database design](docs/design/database-design.jpg)
-
-**Sequence and collaboration diagram**
-
-![Sequence diagram](docs/design/sequence-diagram.jpg)
-
-**Use case diagram**
-
-![Use case diagram](docs/design/use-case-diagram.jpg)
-
 ## 🚀 Getting Started
 
 ### Prerequisites
