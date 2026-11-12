@@ -36,3 +36,21 @@ No browser console errors or HTTP >=400 responses during the recorded session.
 5. Process job took ~3–10 min on CPU; recording speeds up that wait (~10 min -> 12 s), disclosed here.
 6. Settings section shows an email/phone; blurred in the recording.
 7. Recording is browser-rendered (Playwright + Edge), not a desktop capture; no audio, on-screen captions instead of narration.
+
+## Additional test cases executed (follow-up run, 2026-11-12)
+Results are in `pending_test_results.json`, `boundary_test.json`, `ui_test_results.json`; scripts in `Demo_Output/tools/`.
+
+| TC | Result | Evidence |
+|---|---|---|
+| TC-02 Unsupported file | PASS | HTTP 400 "Unsupported format. Use MP4, AVI, MOV, MKV or WEBM." |
+| TC-08 Confidence filter | PASS | 0%: vest/helmet/person/boots; 50%: vest/helmet only |
+| TC-09 Track-ID persistence | PASS | ppe.mp4: 516 frames -> 11 unique tracked objects |
+| TC-12 Out-of-order steps | PASS | Two "OUT OF ORDER" SOP alerts on the Cam2 clip |
+| TC-18 Boundary values | PASS | On-limit values normal; 1499.9 / 1600.1 °C, 499.9 / 650.1 kg raise alerts (real function, fake in-memory DB) |
+| TC-20 E-mail alert | PASS | "Email sent successfully"; received by the user |
+| TC-21 MongoDB connection | PASS | Backend log "MongoDB connected successfully!" |
+| TC-23 Admin-only delete | PASS | Invalid token -> HTTP 401 "Invalid or expired session." (operator token not available) |
+| TC-27 Date filter | PASS | 31-10-2026 -> 20 of 109 alerts (page 1); date with none -> 0 of 0 |
+
+Totals: 32 designed, 24 executed, 24 passed, 0 failed, 8 pending (TC-07, 10, 11, 28, 29, 30, 31, 32).
+Observation: the sidebar alert badge and the Active tab disagree (badge 61, Active tab 0), and the Active tab counter shows the date-filter total.

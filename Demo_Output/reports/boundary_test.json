@@ -1,0 +1,58 @@
+[
+  {
+    "temp": 1500,
+    "weight": 500,
+    "alert_created": false,
+    "problems": []
+  },
+  {
+    "temp": 1600,
+    "weight": 650,
+    "alert_created": false,
+    "problems": []
+  },
+  {
+    "temp": 1500,
+    "weight": 650,
+    "alert_created": false,
+    "problems": []
+  },
+  {
+    "temp": 1600,
+    "weight": 500,
+    "alert_created": false,
+    "problems": []
+  },
+  {
+    "temp": 1499.9,
+    "weight": 575,
+    "alert_created": true,
+    "problems": [
+      "Temperature 1499.9\u00b0C is below minimum 1500\u00b0C"
+    ]
+  },
+  {
+    "temp": 1600.1,
+    "weight": 575,
+    "alert_created": true,
+    "problems": [
+      "Temperature 1600.1\u00b0C exceeds maximum 1600\u00b0C"
+    ]
+  },
+  {
+    "temp": 1550,
+    "weight": 499.9,
+    "alert_created": true,
+    "problems": [
+      "Weight 499.9 kg is below minimum 500 kg"
+    ]
+  },
+  {
+    "temp": 1550,
+    "weight": 650.1,
+    "alert_created": true,
+    "problems": [
+      "Weight 650.1 kg exceeds maximum 650 kg"
+    ]
+  }
+]
