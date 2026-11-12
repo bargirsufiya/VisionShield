@@ -36,8 +36,6 @@
 
 ## 🧠 How the AI Works
 
-![Processing workflow](docs/workflow.jpg)
-
 1. **Video input** — CCTV or recorded MP4 → frames are extracted and pre-processed with OpenCV.
 2. **PPE detection** — a custom-trained YOLO11 model (`backend/ai/best.pt`) detects `person, helmet, vest, boots, gloves, goggles, cap`; Ultralytics' multi-object tracker keeps object IDs across frames when processing video.
 3. **Process recognition** — three further YOLO11 models (in `backend/ai/process_models/`) recognise the manufacturing steps:
@@ -55,15 +53,6 @@
 ## 🏗️ System Architecture
 
 ![System architecture](docs/architecture.jpg)
-
-| Layer | Components |
-|---|---|
-| **Client layer** | End user (plant supervisor) opens the web dashboard in a browser |
-| **Frontend (React.js)** | Video upload · Evidence viewer (annotated frames) · Summary panel (counts and charts) |
-| **Application layer (Python, FastAPI)** | FastAPI backend (upload, analysis and result endpoints) → OpenCV frame processing → YOLO11 detection → Rule engine (threshold checks) → Evidence generator (frames and timestamps) → Results store (violations and evidence) |
-| **Data input layer** | CCTV video (foundry footage) · Sensor readings (simulated now, ESP32 later) |
-
-The frontend and the backend communicate over a REST API (HTTP).
 
 ## 🚀 Getting Started
 
